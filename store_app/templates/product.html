@@ -7,8 +7,8 @@
             <img class="product-picture-img" src="{{ product.picture_link }}" alt="{{ product.name }}">
         </div>
         <div class="col-md-4 col-sm-12 col-lg-7">
-            <h1>{{ product.name }}</h1>
-            <p>{{ product.category }}</p>
+            <h1 class="product-title">{{ product.name }}</h1>
+            <p>{{ product.category.name }}</p>
             <p class="product-price">Price: {{ product.price }} USD</p>
             <p>{{ product.description }}</p>
             <p>added: {{ product.created_at }}</p>
