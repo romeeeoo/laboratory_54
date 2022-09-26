@@ -7,13 +7,13 @@
                 <div class="card card-products card-products-img mt-4">
                     <div class="img-card-container">
                         <img src="{{ product.picture_link }}" class="card-img-top" alt=
-                            "{{ product.name }}">
+                                "{{ product.name }}">
                     </div>
                     <div class="card-body">
                         <p class="card-products-name"> {{ product.name }}</p>
                         <p class="card-products-category">{{ product.category.name }}</p>
                         <p class="card-products-price">Price {{ product.price }} USD</p>
-                        <a href="{% url "product_detailed" product.pk %} " class="btn btn-works text-uppercase
+                        <a href="{% url "product_detailed" product.pk %} " class="btn btn-primary text-uppercase
                         btn-blue">see
                             more</a>
                     </div>
